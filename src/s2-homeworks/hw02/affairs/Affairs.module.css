@@ -1,6 +1,7 @@
 .buttonContainer {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
     margin-bottom: 32px;
 }
 
@@ -26,9 +27,8 @@
     background: transparent;
     color: var(--color);
 
-    border: 1px solid var(--color);
+    border: 1.5px solid var(--color);
     border-radius: 15px;
-    outline: none;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -49,7 +49,16 @@
 
 .affairs {
     display: flex;
-    gap: 17px;
+    gap: 24px 17px;
     flex-wrap: wrap;
-    max-width: 450px;
+    max-width: 387px;
+    min-height: 168px;
+    align-content: flex-start;
 }
+
+.button.low { order: 1; }
+.button.high { order: 2; }
+.button.middle { order: 3; }
+.button:hover { background: var(--color); color: white; }
+.button:focus-visible { outline: 2px solid var(--color); outline-offset: 3px; }
+@media (max-width: 440px) { .buttonContainer { gap: 10px; } }

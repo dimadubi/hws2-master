@@ -1,18 +1,38 @@
 .App {
     --header_height: 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 107px 0 134px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
 }
 
 .hw {
     margin: 0 auto;
-    border: 1px solid red;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #dedbdb;
 }
 
 .hwTitle {
     margin: 0 auto;
-    border: 1px solid red;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dedbdb;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
 }
 
+.App > div + div { margin-top: 36px; }
+.App > div:nth-child(2) > .hw { padding-top: 31px; min-height: 336px; }
+
 .hwTitle, .hw {
-    padding: 0 70px;
+    padding-left: 70px;
+    padding-right: 70px;
     max-width: 1280px;
+}
+
+@media (max-width: 600px) {
+    .App { padding: 32px 0 48px; }
+    .hwTitle, .hw { padding-left: 20px; padding-right: 20px; }
 }

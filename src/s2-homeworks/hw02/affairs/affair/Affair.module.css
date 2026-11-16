@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     width: 185px;
+    height: 40px;
+    flex-shrink: 0;
 
     border: 1.5px solid var(--color);
     border-radius: 5px;
@@ -10,7 +12,12 @@
 .name {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 12px;
+    min-width: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
     width: 145px;
     height: 37px;
 }
@@ -26,6 +33,15 @@
     border: none;
     border-left: 1.5px solid var(--color);
 
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 400;
     cursor: pointer;
 }
+
+.closeButton:hover { background: #f5f7fb; }
+.closeButton:focus-visible { outline: 2px solid #06c; outline-offset: 2px; }
+.affair:first-child:nth-last-child(5) { order: 0; }
+.affair:nth-child(2):nth-last-child(4) { order: 2; }
+.affair:nth-child(3):nth-last-child(3) { order: 1; }
+.affair:nth-child(4):nth-last-child(2) { order: 3; }
+.affair:nth-child(5):last-child { order: 4; }

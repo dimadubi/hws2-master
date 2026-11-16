@@ -1,18 +1,9 @@
-.sendForm {
-
-}
-
-.textarea {
-
-}
-
-.button {
-
-}
-
-.button:hover {
-
-}
-.button:active {
-
-}
+.sendForm { display: flex; align-items: flex-start; gap: 44px; margin-top: 56px; }
+.textarea { flex: 1; min-width: 0; min-height: 40px; padding: 11px 24px; resize: none; border: 0; border-radius: 20px; background: #f5f7fb; box-shadow: 0 1px 2px #1d21261a, 0 5px 20px #1d212608; font: 400 14px/18px 'Montserrat', sans-serif; }
+.textarea::placeholder { color: #888; }
+.textarea:focus-visible { outline: 2px solid #06c; outline-offset: 3px; }
+.button { flex: 0 0 120px; min-height: 40px; border: 0; border-radius: 20px; background: #06c; color: white; font: 600 16px/20px 'Montserrat', sans-serif; cursor: pointer; }
+.button:hover { background: #0057ae; }
+.button:active { background: #00478f; }
+.button:focus-visible { outline: 2px solid #06c; outline-offset: 3px; }
+@media (max-width: 600px) { .sendForm { gap: 12px; margin-top: 32px; } .button { flex-basis: 80px; } }
