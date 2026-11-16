@@ -40,6 +40,7 @@ function Affair(props: AffairPropsType) {
             >
                 {/*текст кнопки могут изменить студенты*/}
                 <img src={closeIcon} width={23} height={24} alt="" />
+                <span className={s.buttonText}>X</span>
                 {/**/}
             </button>
         </div>
